@@ -19,7 +19,6 @@ Este proyecto demuestra cómo diseñar y ejecutar una canalización de datos mod
 
 El pipeline procesa datos sintéticos de venta minorista, aplica reglas de validación y limpieza, y produce conjuntos de datos analíticos seleccionados y optimizados para la elaboración de informes y análisis posteriores.
 
-![Panel de control](images/arquitectura.png)
 
 ---
 
