@@ -1,4 +1,4 @@
-# 🚀 Pipeline de Big Data para Ventas Minoristas con PySpark y Docker
+# 🚀 Pipeline de Big Data para Ventas Retail con PySpark y Docker
 
 Proyecto integral de **Ingeniería de Datos** que simula un entorno de ventas minoristas utilizando **Apache Spark**, **Docker** y una **Arquitectura Medallion (Bronce → Plata → Oro)** para procesar un millón de registros de transacciones minoristas en un entorno distribuido.
 
