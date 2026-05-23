@@ -19,10 +19,11 @@ Este proyecto demuestra cómo diseñar y ejecutar una canalización de datos mod
 
 El pipeline procesa datos sintéticos de venta minorista, aplica reglas de validación y limpieza, y produce conjuntos de datos analíticos seleccionados y optimizados para la elaboración de informes y análisis posteriores.
 
+![Arquitectura](images/arquitectura.jpg)
 
 ---
 
-## Arquitectura
+## 🏗️ Arquitectura
 
 ### Clúster Spark distribuido (modelo maestro-trabajador)
 
@@ -59,7 +60,7 @@ Los trabajadores ejecutan tareas distribuidas en paralelo utilizando particiones
 
 ---
 
-## Arquitectura Medallón
+## ⚙️ Arquitectura Medallón
 
 El proceso sigue una **arquitectura Medallion multicapa**.
 
@@ -81,7 +82,7 @@ Gold Layer
 
 ---
 
-## Bronze Layer: ingesta de datos sin procesar
+## 🔄 Bronze Layer: ingesta de datos sin procesar
 
 Objetivo:
 
@@ -106,7 +107,7 @@ data/bronze/retail_sales_bronze/
 
 ---
 
-## Silver Layer: Limpieza y estandarización de datos
+## 🔄 Silver Layer: Limpieza y estandarización de datos
 
 Objetivo:
 
@@ -183,7 +184,7 @@ data/silver/retail_silver_clean/
 
 ---
 
-## Gold Layer: tablas analíticas seleccionadas
+## 🔄 Gold Layer: tablas analíticas seleccionadas
 
 Objetivo:
 
@@ -239,9 +240,9 @@ gold/city_revenue_metrics/
 
 ---
 
-# Conceptos de ingeniería de Spark demostrados
+# ✅ Conceptos de ingeniería de Spark demostrados
 
-## 1. Procesamiento distribuido maestro-trabajador
+## 📌 1. Procesamiento distribuido maestro-trabajador
 
 Spark ejecuta cargas de trabajo mediante un modelo distribuido.
 
@@ -260,7 +261,7 @@ Esto permite la escalabilidad horizontal y el procesamiento en paralelo.
 
 ---
 
-## 2. Transformaciones vs. Acciones
+## 📌 2. Transformaciones vs. Acciones
 
 Un concepto fundamental de Spark.
 
@@ -306,7 +307,7 @@ Cuando se ejecuta una acción, Spark evalúa todo el linaje y elabora el plan de
 
 ---
 
-## 3. Plan lógico vs. Plan físico
+## 📌 3. Plan lógico vs. Plan físico
 
 Spark utiliza el **Catalyst Optimizer**.
 
@@ -340,7 +341,7 @@ El optimizador decide:
 
 ---
 
-## 4. Lazy Evaluation
+## 📌 4. Lazy Evaluation
 
 Spark pospone la ejecución hasta que se llama a una acción.
 
@@ -354,7 +355,7 @@ Este proyecto aprovecha al máximo la ejecución diferida mediante transformacio
 
 ---
 
-## 5. Particionamiento de datos
+## 📌 5. Particionamiento de datos
 
 Spark divide los datos en particiones.
 
@@ -379,7 +380,7 @@ Esto permite el paralelismo.
 
 ---
 
-## 6. Operaciones de Shuffle
+## 📌 6. Operaciones de Shuffle
 
 El proceso de redistribución (shuffle) se produce cuando Spark redistribuye los datos entre los nodos.
 
@@ -410,7 +411,7 @@ Comprender los costos de la redistribución de datos es esencial para las cargas
 
 ---
 
-## 7. Almacenamiento columnar con parquet
+## 📌 7. Almacenamiento columnar con parquet
 
 El proyecto almacena los resultados utilizando:
 
@@ -427,7 +428,7 @@ Beneficios:
 
 ---
 
-## Generación de datos sintéticos
+## 🔄 Generación de datos sintéticos
 
 El conjunto de datos se genera mediante programación utilizando Python.
 
@@ -447,7 +448,7 @@ Generador:
 generate_raw_data.py
 ```
 
-## Panel de demostración
+## 📊 Panel de demostración
 
 Se creó un panel de control sencillo en Power BI para validar los datos seleccionados resultantes.
 
@@ -457,7 +458,7 @@ Su propósito es únicamente demostrar el consumo posterior de los conjuntos de 
 
 ---
 
-## Tech Stack
+## 🧰 Tech Stack
 
 - Apache Spark 3.5.1
 - PySpark
