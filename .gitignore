@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual env
+venv/
+.env/
+
+# Spark outputs
+data/
+data/bronze/
+data/silver/
+data/gold/
+
+# Spark temp files
+*.crc
+_SUCCESS
+
+# Parquet
+*.parquet
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
