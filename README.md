@@ -19,6 +19,8 @@ Este proyecto demuestra cómo diseñar y ejecutar una canalización de datos mod
 
 El pipeline procesa datos sintéticos de venta minorista, aplica reglas de validación y limpieza, y produce conjuntos de datos analíticos seleccionados y optimizados para la elaboración de informes y análisis posteriores.
 
+![Panel de control](images/arquitectura.png)
+
 ---
 
 ## Arquitectura
@@ -452,7 +454,7 @@ Se creó un panel de control sencillo en Power BI para validar los datos selecci
 
 Su propósito es únicamente demostrar el consumo posterior de los conjuntos de datos procesados.
 
-![Panel de control](dashboard.png)
+![Panel de control](images/dashboard.png)
 
 ---
 
